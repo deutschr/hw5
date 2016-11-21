@@ -1,4 +1,4 @@
-public class BubbleSort
+public class HW5
 {
   public static void main(String[] args) {
     //array of numbers to be sorted
@@ -6,17 +6,19 @@ public class BubbleSort
     
     //print the array before sorting
     for(int i=0; i<array.length;i++){
-      System.out.println(array[i] + " ");
+      System.out.print(array[i] + " ");
     }
     
     bubblesort(array);
+    //used sorting method
+    System.out.println("");
     
     System.out.println("After sorting");
     for(int i=0;i < array.length;i++)
     {
       System.out.print(array[i]+ " ");
     }
-    
+    //printing out final product
     
   }
   
@@ -27,8 +29,8 @@ public class BubbleSort
     int x = array.length;
     int temp = 0;
     
-    for(int i=0; i<y; i++){
-      for(int z=1;z<(y-i);z++){
+    for(int i=0; i < x ; i++){
+      for(int z=1;z<(x-i);z++){
         
         if(array[z-1] > array[z]){
           temp = array[z-1];
@@ -39,3 +41,4 @@ public class BubbleSort
     }
     
   }
+}
