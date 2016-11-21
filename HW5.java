@@ -24,5 +24,18 @@ public class BubbleSort
   
   private static void bubblesort(int[]array){
     
+    int x = array.length;
+    int temp = 0;
+    
+    for(int i=0; i<y; i++){
+      for(int z=1;z<(y-i);z++){
+        
+        if(array[z-1] > array[z]){
+          temp = array[z-1];
+          array[z-1] = array[z];
+          array[z] = temp;
+        }
+      }
+    }
     
   }
