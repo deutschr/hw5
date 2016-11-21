@@ -9,6 +9,15 @@ public class BubbleSort
       System.out.println(array[i] + " ");
     }
     
+    bubblesort(array);
+    
+    System.out.println("After sorting");
+    for(int i=0;i < array.length;i++)
+    {
+      System.out.print(array[i]+ " ");
+    }
+    
+    
   }
   
  
